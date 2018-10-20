@@ -34,7 +34,7 @@ public class Train {
      * @param index of carriage
      * @return carriage with given index
      */
-    public Wagon getCarriageByIndex(int index){
+    public Wagon getWagonByIndex(int index){
         try{
             return wagons.get(index);
         }catch (Exception e){
@@ -48,7 +48,7 @@ public class Train {
      * @param cars wagons to add
      */
     public Train(Wagon... cars){
-        addCarriages(cars);
+        addWagons(cars);
     }
 
     /***
@@ -56,7 +56,7 @@ public class Train {
      * @param cars wagons to add
      */
     public Train(List<Wagon> cars){
-        addCarriages(cars);
+        addWagons(cars);
     }
 
     /**
@@ -167,7 +167,7 @@ public class Train {
     /**Adds a list of wagons to the train
      * @param cars new list to be added
      */
-    public void addCarriages(List<Wagon> cars){
+    public void addWagons(List<Wagon> cars){
         for(Wagon car:cars){
             car.setNumber(wagons.size()+1);
             addCarriage(car);
@@ -177,7 +177,7 @@ public class Train {
     /**Adds an array of wagons to the train
      * @param cars new array to be added
      */
-    public void addCarriages(Wagon[] cars){
+    public void addWagons(Wagon[] cars){
         for(Wagon car:cars){
             car.setNumber(wagons.size()+1);
             addCarriage(car);

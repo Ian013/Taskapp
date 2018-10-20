@@ -3,6 +3,7 @@ package application.logic;
 import application.logic.carriages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 
 
@@ -30,7 +31,7 @@ public class TrainTest extends UtilTest{
         Assert.assertEquals(train.getTrainLength(), 5);
     }
 
-    public void testAddCarriages() {
+    public void testAddWagons() {
         ArrayList<Wagon> list = new ArrayList<>();
         for(int i=0;i<3;i++){
             list.add(new SecondClassWagon(i+5,i+10));
@@ -41,11 +42,11 @@ public class TrainTest extends UtilTest{
         expected.addAll(train.getWagons());
         expected.addAll(list);
 
-        train.addCarriages(list);
+        train.addWagons(list);
         Assert.assertEquals(train.getWagons(),expected);
     }
 
-    public void testGetCarriages() {
+    public void testGetWagons() {
         ArrayList<Wagon> expected = new ArrayList<>();
 
         expected.add(new FirstClassWagon(20,15));
@@ -57,9 +58,9 @@ public class TrainTest extends UtilTest{
         Assert.assertEquals(train.getWagons(),expected);
     }
 
-    public void testGetCarriage() {
+    public void testGetWagon() {
         Wagon expected = new FirstClassWagon(20,15);
-        Wagon target = train.getCarriageByIndex(0);
+        Wagon target = train.getWagonByIndex(0);
         Assert.assertEquals(expected,target);
     }
 
@@ -73,12 +74,12 @@ public class TrainTest extends UtilTest{
 
     public void testLoadToCarriage() {
         train.loadToCarriage(2,100);
-        Assert.assertEquals(train.getCarriageByIndex(2).getCurrentWeight(),100);
+        Assert.assertEquals(train.getWagonByIndex(2).getCurrentWeight(),100);
     }
 
     public void testGivePassengersToCarriage() {
         train.givePassengersToCarriage(0,10);
-        Assert.assertEquals(train.getCarriageByIndex(0).getCurrentPassengers(),10);
+        Assert.assertEquals(train.getWagonByIndex(0).getCurrentPassengers(),10);
     }
 
 

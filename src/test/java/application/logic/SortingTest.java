@@ -46,12 +46,18 @@ public class SortingTest extends UtilTest {
     }
 
     public void testSortByCurrentWeight() {
-
+        for(int i=2;i>=0;i--){
+            train.addCarriage(new FreightWagon(i*50));
+        }
         train.sortByCurrentWeight();
 
+
         expected.add(new RestaurantWagon());
+        expected.add(new FreightWagon());
         expected.add(new SecondClassWagon(12,12));
         expected.add(new FirstClassWagon(20,15));
+        expected.add(new FreightWagon(50));
+        expected.add(new FreightWagon(100));
         expected.add(new BaggageWagon(123));
         expected.add(new FreightWagon(302));
 
