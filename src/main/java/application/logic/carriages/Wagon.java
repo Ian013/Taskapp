@@ -9,7 +9,7 @@ import java.security.InvalidParameterException;
 import java.util.Objects;
 
 /**
- * An abstract class, represents a carriage
+ * An abstract class, represents a wagon
  */
 @SuppressWarnings("WeakerAccess")
 public abstract class Wagon {
@@ -104,6 +104,9 @@ public abstract class Wagon {
         return Objects.hash(currentPassengers, maxPassengers, maxWeight, currentWeight, comfortLevel,number);
     }
 
+    /**
+     * @return numeric value of wagons comfort
+     */
     public int getComfort(){
         switch (comfortLevel){
             case RESTAURANT: return -1;
