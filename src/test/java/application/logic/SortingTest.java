@@ -47,7 +47,7 @@ public class SortingTest extends UtilTest {
 
     public void testSortByCurrentWeight() {
         for(int i=2;i>=0;i--){
-            train.addCarriage(new FreightWagon(i*50));
+            train.addWagon(new FreightWagon(i*50));
         }
         train.sortByCurrentWeight();
 
@@ -69,7 +69,7 @@ public class SortingTest extends UtilTest {
     public void testSortByCurrentPassengers() {
 
         for(int i=2;i>=0;i--){
-            train.addCarriage(new SecondClassWagon(0,i*5));
+            train.addWagon(new SecondClassWagon(0,i*5));
         }
         train.sortByCurrentPassengers();
 

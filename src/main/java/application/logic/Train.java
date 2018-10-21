@@ -64,7 +64,7 @@ public class Train {
      * @param index of car
      * @param weight of baggage
      */
-    public void loadToCarriage(int index,int weight){
+    public void loadToWagon(int index, int weight){
         wagons.get(index).loadBaggage(weight);
     }
 
@@ -73,7 +73,7 @@ public class Train {
      * @param index of car
      * @param passengers quantity
      */
-    public void givePassengersToCarriage(int index,int passengers){
+    public void givePassengersToWagen(int index, int passengers){
         wagons.get(index).givePassengers(passengers);
     }
     /**
@@ -159,7 +159,7 @@ public class Train {
     /**Adds a new carriage to the train
      * @param car new carriage to be added
      */
-    public void addCarriage(Wagon car){
+    public void addWagon(Wagon car){
         car.setNumber(wagons.size()+1);
         wagons.add(car);
     }
@@ -170,7 +170,7 @@ public class Train {
     public void addWagons(List<Wagon> cars){
         for(Wagon car:cars){
             car.setNumber(wagons.size()+1);
-            addCarriage(car);
+            addWagon(car);
         }
     }
 
@@ -180,8 +180,28 @@ public class Train {
     public void addWagons(Wagon[] cars){
         for(Wagon car:cars){
             car.setNumber(wagons.size()+1);
-            addCarriage(car);
+            addWagon(car);
         }
+    }
+
+    public Wagon[] getWagonsByPassengers(int min, int max){
+        ArrayList<Wagon> res = new ArrayList<>();
+        for(Wagon wagon: wagons){
+            if(wagon.getCurrentPassengers()>min&&wagon.getCurrentPassengers()<max){
+                res.add(wagon);
+            }
+        }
+        return res.toArray(new Wagon[0]);
+    }
+
+    public Wagon[] getWagonsByWeight(int min, int max){
+        ArrayList<Wagon> res = new ArrayList<>();
+        for(Wagon wagon: wagons){
+            if(wagon.getCurrentWeight()>min&&wagon.getCurrentWeight()<max){
+                res.add(wagon);
+            }
+        }
+        return res.toArray(new Wagon[0]);
     }
 
     /**

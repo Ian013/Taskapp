@@ -27,9 +27,17 @@ public class PropertiesReader {
         }
     }
 
-    public int readIntProperty(String key) {
+    /**
+     * @param key of property
+     * @return int value of property with given key
+     */
+    public int readIntProperty(String key){
         return config.getInt(key);
     }
+    /**
+     * @param key of property
+     * @return string value of property with given key
+     */
     public String readStringProperty(String key){
         return config.getString(key);
     }
