@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-10-13T08:43:41Z" name="Command line suite" finished-at="2018-10-13T08:43:41Z" duration-ms="282">
+    <groups>
+    </groups>
+    <test started-at="2018-10-13T08:43:41Z" name="Command line test" finished-at="2018-10-13T08:43:41Z" duration-ms="282">
+      <class name="application.logic.CarriagesTest">
+        <test-method signature="testBaggageCarriagePassengers()[pri:0, instance:application.logic.CarriagesTest@6e4784bc]" started-at="2018-10-13T08:43:41Z" name="testBaggageCarriagePassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="34" status="PASS">
+          <exception class="java.lang.UnsupportedOperationException">
+            <message>
+              <![CDATA[There is no passengers in this type of a carriage!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsupportedOperationException: There is no passengers in this type of a carriage!
+at application.logic.Carriage.givePassengers(Carriage.java:53)
+at application.logic.CarriagesTest.testBaggageCarriagePassengers(CarriagesTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsupportedOperationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaggageCarriagePassengers -->
+        <test-method signature="testFreightCarriageLoadBaggage()[pri:0, instance:application.logic.CarriagesTest@6e4784bc]" started-at="2018-10-13T08:43:41Z" name="testFreightCarriageLoadBaggage" finished-at="2018-10-13T08:43:41Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFreightCarriageLoadBaggage -->
+        <test-method signature="testFreightCarriageOverload()[pri:0, instance:application.logic.CarriagesTest@6e4784bc]" started-at="2018-10-13T08:43:41Z" name="testFreightCarriageOverload" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <exception class="java.security.InvalidParameterException">
+            <message>
+              <![CDATA[Weight of baggage is more than maximum!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.security.InvalidParameterException: Weight of baggage is more than maximum!
+at application.logic.Carriage.loadBaggage(Carriage.java:46)
+at application.logic.CarriagesTest.testFreightCarriageOverload(CarriagesTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.security.InvalidParameterException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFreightCarriageOverload -->
+        <test-method signature="testFreightCarriagePassengers()[pri:0, instance:application.logic.CarriagesTest@6e4784bc]" started-at="2018-10-13T08:43:41Z" name="testFreightCarriagePassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <exception class="java.lang.UnsupportedOperationException">
+            <message>
+              <![CDATA[There is no passengers in this type of a carriage!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.UnsupportedOperationException: There is no passengers in this type of a carriage!
+at application.logic.Carriage.givePassengers(Carriage.java:53)
+at application.logic.CarriagesTest.testFreightCarriagePassengers(CarriagesTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.UnsupportedOperationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFreightCarriagePassengers -->
+        <test-method signature="testToString()[pri:0, instance:application.logic.CarriagesTest@6e4784bc]" started-at="2018-10-13T08:43:41Z" name="testToString" finished-at="2018-10-13T08:43:41Z" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+      </class> <!-- application.logic.CarriagesTest -->
+      <class name="application.logic.TrainTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddCarriage()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testAddCarriage" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddCarriage -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddCarriages()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testAddCarriages" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddCarriages -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCalculateCurrentPassengers()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testCalculateCurrentPassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateCurrentPassengers -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testCalculateMaxPassengers()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testCalculateMaxPassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateMaxPassengers -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testGetTrainLength()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testGetTrainLength" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTrainLength -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method signature="testSortByCurrentPassengers()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testSortByCurrentPassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortByCurrentPassengers -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSortByMaxPassengers()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testSortByMaxPassengers" finished-at="2018-10-13T08:43:41Z" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortByMaxPassengers -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="setup" finished-at="2018-10-13T08:43:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testToString()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="testToString" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:application.logic.TrainTest@34b7ac2f]" started-at="2018-10-13T08:43:41Z" name="cleanUp" finished-at="2018-10-13T08:43:41Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- application.logic.TrainTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
